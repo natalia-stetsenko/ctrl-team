@@ -1,0 +1,70 @@
+img {
+    max-width: 338px;
+    display: block;
+}
+
+.gallery-section {
+    padding: 64px 32px;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 32px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #030a06;
+}
+
+.paragraph {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #030a06;
+}
+
+.gallery-row {
+  display: flex;
+  gap: 24px;
+  align-items: stretch; /* Щоб висота великої колонки відповідала маленькій колонці */
+  justify-content: center;
+}
+
+.small-column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.img-small {
+  width: 100%;
+  display: block;
+  border-radius: 32px;
+  object-fit: cover;
+  flex: 0 0 auto;
+  background-repeat: no-repeat;
+}
+
+.large-row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  background-repeat: no-repeat;
+}
+
+.img-large {
+  height: 100%;
+  object-fit: cover;
+  flex: 1;
+  border-radius: 32px;
+}
