@@ -1,0 +1,125 @@
+@media (max-width: 767px) {
+    .advantages {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+.advantages-subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.advantages-title {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+}
+
+.advantages-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 48px;
+}
+
+.advantages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.advantages-itempic {
+    border-radius: 32px;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.advantages-itemtitle {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+}
+
+.advantages-itemdescription {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+
+    .advantages-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .advantages-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .advantages-item:last-child {
+        flex-grow: 1;
+    }
+
+    .advantages-subtitle {
+        margin-bottom: 16px;
+    }
+
+    .advantages-title {
+        margin-bottom: 24px;
+    }
+
+    .advantages-description {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .advantages-itempic {
+        margin-bottom: 32px;
+    }
+
+    .advantages-itemtitle {
+        margin-bottom: 8px;
+    }
+
+    .advantages-itemtitle-tab {
+        margin-bottom: 42px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .advantages-list {
+        flex-wrap: nowrap;
+    }
+
+    .advantages-item {
+        width: calc((100% - (2 * 24px)) / 3);
+    }
+
+    .advantages-title-block {
+        padding-right: 544px;
+        margin-bottom: 80px;
+    }
+
+    .advantages-title {
+        font-size: 48px;
+    }
+
+    .advantages-itemtitle {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+}
