@@ -1,0 +1,178 @@
+/* !!! Стилі для секції hero !!! */
+
+/* Заголовок секції Hero */
+.hero-title {
+  /* Шрифт заголовку hero */
+  font-family: var(--second-family);
+  /* Розмір шрифту заголовку hero */
+  font-size: 40px;
+
+  /* Товщина шрифту заголовку hero */
+  font-weight: 700;
+
+  /* Міжрядковий інтервал заголовку hero */
+  line-height: 1.2;
+
+  /* Відстань між літерами заголовку hero */
+  letter-spacing: 0.01em;
+
+  /* Нижній відступ заголовку hero */
+
+  margin-bottom: 20px;
+}
+
+/* !!! Стилі для тексту з призовом до дії - опис секції hero !!! */
+.hero-text {
+  /* Розмір шрифту тексту hero */
+  font-size: 16px;
+
+  /* Товщина шрифту тексту hero */
+  font-weight: 400;
+
+  /* Міжрядковий інтервал тексту hero */
+  line-height: 1.6;
+
+  /* Нижній відступ тексту hero */
+
+  margin-bottom: 24px;
+}
+
+/* !!! Стилі для кнопки hero !!! */
+.hero-btn {
+  /* Розмір шрифту кнопки hero */
+  font-size: 16px;
+
+  /* Товщина шрифту кнопки hero */
+  font-weight: 400;
+
+  /* Міжрядковий інтервал кнопки hero */
+  line-height: 1.6;
+
+  /* Колір тексту кнопки hero */
+  color: var(--text-color-secondary);
+
+  /* Фоновий колір кнопки hero */
+  background: var(--btn-background-darkest);
+
+  /* Включаємо блочну модель */
+  display: block;
+
+  /* Мінімальна ширина кнопки для тексту "Купити зараз" */
+  min-width: 140px;
+
+  /* Висота кнопки */
+  height: 50px;
+
+  /* Центрування тексту кнопки */
+  text-align: center;
+
+  /* Нижній відступ кнопки */
+  margin-bottom: 20px;
+
+  /* Внутрішні відступи кнопки */
+  padding: 12px 24px;
+
+  /* Рамку кнопки */
+  border: 1px solid var(--btn-background-darkest);
+
+  /* Заокруглення кутів кнопки */
+  border-radius: 6px;
+
+  /* Тінь кнопки */
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 15%);
+
+  /* Курсор при наведенні на кнопку */
+  cursor: pointer;
+
+  /* Запобігання переносу тексту */
+  white-space: nowrap;
+
+  /* Плавний перехід фонового кольору */
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  /* Фоновий колір кнопки при наведенні */
+  opacity: 0.5;
+}
+
+.hero-btn:active {
+  /* Рамку кнопки */
+  border: 1px solid #113916;
+  /* Фоновий колір кнопки при натисканні */
+  background: #113916;
+  /* Фоновий колір кнопки при наведенні */
+  opacity: 0.6;
+}
+/* !!! Стилі для картинки hero !!! */
+.hero-img {
+  /* Максимальна ширина фото hero */
+  max-width: 288px;
+  /* Заокруглення кутів фото */
+  border-radius: 40px;
+}
+
+@media screen and (width >= 768px) {
+  /* !!! Стилі для секції hero !!! */
+  .hero {
+    /* Вертикальні падінги секції hero для планшетів */
+    padding: 32px 17px 64px 17px;
+  }
+  /* !!! Стилі для обгортки секції hero !!! */
+  .hero-wrapper {
+    /* Розміщуємо елементи в рядок */
+    display: flex;
+    flex-direction: row;
+    /* Проміжок між елементами wrapper */
+    gap: 24px;
+  }
+
+  /* !!! Стилі для тексту з призовом до дії - опис секції hero !!! */
+  .hero-text {
+    /* Розмір шрифту заголовку hero */
+    font-size: 18px;
+
+    /* Нижній відступ тексту hero */
+    margin-bottom: 32px;
+  }
+  /* !!! Стилі для кнопки hero !!! */
+  .hero-btn {
+    /* Мінімальна ширина кнопки для тексту "Купити зараз" */
+    width: 148px;
+    /* Колір тексту кнопки hero */
+    color: var(--text-color-secondary);
+  }
+
+  .hero-img {
+    /* Максимальна ширина фото hero */
+    max-width: 704px;
+  }
+}
+
+@media screen and (width >= 1440px) {
+  /* !!! Стилі для секції hero !!! */
+  .hero {
+    /* Вертикальні падінги секції hero для планшетів */
+    padding: 32px 49px 64px 49px;
+  }
+  /* !!! Стилі для обгортки секції hero !!! */
+  .hero-wrapper {
+    /* Проміжок між елементами wrapper */
+    gap: 32px;
+    
+  }
+  /* Заголовок секції Hero */
+  .hero-title {
+    width: 640px;
+    /* Розмір шрифту заголовку hero */
+    font-size: 56px;
+  }
+  .hero-img {
+    /* Максимальна ширина фото hero */
+    max-width: 1312px;
+  }
+}
