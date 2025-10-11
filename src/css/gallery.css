@@ -63,13 +63,15 @@ img {
   gap: 12px;
 }
 
-.img-small img,
 .img-large img {
   min-width: 100%;
   min-height: 100%;
-  object-fit: cover;
   border-radius: 32px;
 }
+.img-small {
+  border-radius: 32px;
+}
+
 
 .hidden-des {
   display: none;
@@ -84,15 +86,25 @@ img {
 
 .list-gallery {
   flex-direction: column;
+  position: relative;
+  margin-bottom: 400px;
 }
 
 .ul-gallery-small {
     flex-direction: row;
+    gap: 24px;
+    flex-wrap: wrap;  
 }
 
 
 .ul-gallery {
   flex-direction: row-reverse;
+  position: absolute;
+  top: 54%;
+}
+.position{
+  top: 50%;
+  transform: translateY(102%);
 }
 
 .hidden-des {
@@ -106,8 +118,6 @@ img {
 .no-hidden-des {
   display: block;
 }
-
-
 }
 
 
