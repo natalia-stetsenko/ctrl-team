@@ -118,6 +118,18 @@ img {
     flex-direction: column;
   }
 
+  .span-text {
+    gap: 16px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .gallery-section {
+    padding: 32px 0;
+  }
+
   .list-gallery {
     flex-direction: column;
     gap: 16px;
