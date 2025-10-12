@@ -1,5 +1,5 @@
 .container {
-    padding: 32px 16px;
+    padding: 32px 0;
     margin: 0 auto;
 }
 
@@ -8,7 +8,7 @@
     font-family: 'Comfortaa';
     font-weight: 700;
     font-size: 36px;
-    line-height: 120%;
+    line-height: 1.2;
     letter-spacing: 0.01em;
     margin-bottom: 32px;
 }
@@ -29,13 +29,11 @@
 .feedback-item-grade {
     display: flex;
     gap: 4px;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 }
 
 
-.feedback-section {
-    padding: 0;
-}
+
 
 .feedback-list {
     display: flex;
@@ -45,7 +43,10 @@
 
 .feedback-item {
     padding: 0;
-    width: 100%;
+    margin: 0 auto;
+width: 288px;
+
+
 }
 
 
@@ -53,7 +54,7 @@
     font-family: 'Comfortaa';
 font-weight: 700;
 font-size: 20px;
-line-height: 140%;
+line-height: 1.4;
 letter-spacing: 0.01em;
 margin-bottom: 12px;
 height: 84px;
@@ -63,7 +64,7 @@ height: 84px;
     font-family: 'Fira Sans';
 font-weight: 600;
 font-size: 16px;
-line-height: 160%;
+line-height: 1.6%;
 letter-spacing: 0;
 
 }
@@ -93,6 +94,10 @@ margin-bottom: 24px;
 
     }
 
+    .feedback-item-grade {
+        margin-bottom: 24px;
+    }
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -102,12 +107,9 @@ margin-bottom: 24px;
         margin-bottom: 80px;
         width: 560px;
     }
-    .container {
-        padding: 64px;
-        min-width: 100%;
-    }
+
     .feedback-item {
-        width: calc(25%-18px);
+        width: 310px;
         
     }
 
