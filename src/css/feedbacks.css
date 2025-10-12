@@ -5,7 +5,7 @@
 
 .feedback-section-header {
     text-align: center;
-    font-family: 'Comfortaa';
+    font-family: var(--second-family);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -14,26 +14,22 @@
 }
 
 .feedback-star-content {
-    fill:  #3AC04C;
+    fill: #3AC04C;
 }
 
 .feedback-star {
     display: flex;
-  align-items: center;
-  justify-content: center;
-
+    align-items: center;
+    justify-content: center;
     height: 24px;
     width: 24px;
-    
 }
+
 .feedback-item-grade {
     display: flex;
     gap: 4px;
     margin-bottom: 12px;
 }
-
-
-
 
 .feedback-list {
     display: flex;
@@ -44,29 +40,26 @@
 .feedback-item {
     padding: 0;
     margin: 0 auto;
-width: 288px;
-
-
+    width: 288px;
 }
 
 
 .feedback-item-text {
-    font-family: 'Comfortaa';
-font-weight: 700;
-font-size: 20px;
-line-height: 1.4;
-letter-spacing: 0.01em;
-margin-bottom: 12px;
-height: 84px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    margin-bottom: 12px;
+    height: 84px;
 }
 
 .feedback-item-author {
-    font-family: 'Fira Sans';
-font-weight: 600;
-font-size: 16px;
-line-height: 1.6%;
-letter-spacing: 0;
-
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0;
 }
 
 
@@ -78,11 +71,11 @@ letter-spacing: 0;
     .container {
         padding: 64px 32px;
     }
-    .feedback-item {
 
+    .feedback-item {
         max-width: calc(50% - 24px);
-        
     }
+
     .feedback-list {
         gap: 0px;
         column-gap: 24px;
@@ -90,8 +83,7 @@ letter-spacing: 0;
     }
 
     .feedback-item-text {
-margin-bottom: 24px;
-
+        margin-bottom: 24px;
     }
 
     .feedback-item-grade {
@@ -110,9 +102,7 @@ margin-bottom: 24px;
 
     .feedback-item {
         width: 310px;
-        
     }
-
 
     .feedback-list {
         width: fit-content;
