@@ -34,7 +34,7 @@
 }
 
 .footer-nav-menu {
-  transition: color 0.3s ease;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-list {
@@ -48,7 +48,7 @@
   text-align: center;
 }
 .footer-social-link {
-  transition: color 0.3s ease;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link svg {
@@ -90,6 +90,15 @@
 .footer-address-link:hover,
 .footer-address-link:focus {
   color: #3ac04c;
+}
+
+.footer-social-link svg use {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover svg use,
+.footer-social-link:focus svg use {
+  fill: #3ac04c;
 }
 
 @media screen and (min-width: 768px) {
