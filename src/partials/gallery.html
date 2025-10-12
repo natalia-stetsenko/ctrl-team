@@ -1,14 +1,44 @@
-<section class="gallery-section">
+<section class="gallery-section" id="gallery">
   <div class="container">
-    <div class="div-text">
+    <span class="span-text" lang="uk">
       <h2 class="section-title">Галерея зображень</h2>
       <h3 class="h-three">EcoTotes у повсякденному житті</h3>
-    </div>
+    </span>
 
     <div class="list-gallery">
     <ul class="ul-gallery-small">
+
+      <li class="li-gallery-small img-small hidden-tab hidden-des-chair">
+        <div class="ul-li-div-small">
+          <picture class="picture-two">
+          <source
+            srcset="
+            /img/gallery-img/bag-on-a-chair-1x-des.jpg 1x, 
+            /img/gallery-img/bag-on-a-chair-2x-des.jpg 2x"
+            media="(min-width: 1158px)"
+          />
+          <source
+            srcset="
+            /img/gallery-img/bag-on-a-chair-1x-tab.jpg 1x, 
+            /img/gallery-img/bag-on-a-chair-2x-tab.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+            /img/gallery-img/bag-on-a-chair-1x-mob.jpg 1x, 
+            /img/gallery-img/bag-on-a-chair-2x-mob.jpg 2x"
+            media="(min-width: 320px)"
+          />
+          <img
+            src="/img/gallery-img/bag-on-a-chair-basic.jpg"
+            alt="Bag on a chair"
+            class="img-small"
+          />
+          </picture>
+        </div>
+      </li>
       
-      <li class="li-gallery-small img-small">
+      <li class="li-gallery-small img-small hidden-mob">
         <div class="ul-li-div">
           <picture class="picture-one">
           <source
@@ -223,36 +253,36 @@
         </div>
       </li>
 
-      <li class="li-gallery-small img-small hidden-des no-hidden-mob">
-        <div class="ul-li-div-small">
-          <picture class="picture-two">
+      <li class="li-gallery-small img-small  hidden-des no-hidden-mob">
+        <div class="ul-li-div">
+          <picture class="picture-one">
           <source
             srcset="
-            /img/gallery-img/bag-on-a-chair-1x-des.jpg 1x, 
-            /img/gallery-img/bag-on-a-chair-2x-des.jpg 2x"
+            /img/gallery-img/girl-vegetables-des-1x-min.jpg 1x,
+            /img/gallery-img/girl-vegetable-des-2x-min.jpg 2x"
             media="(min-width: 1158px)"
           />
           <source
             srcset="
-            /img/gallery-img/bag-on-a-chair-1x-tab.jpg 1x, 
-            /img/gallery-img/bag-on-a-chair-2x-tab.jpg 2x"
+            /img/gallery-img/girl-vegetable-tab-1x-min.jpg 1x, 
+            /img/gallery-img/girl-vegetable-tab-2x-min.jpg 2x"
             media="(min-width: 768px)"
           />
           <source
             srcset="
-            /img/gallery-img/bag-on-a-chair-1x-mob.jpg 1x, 
-            /img/gallery-img/bag-on-a-chair-2x-mob.jpg 2x"
+            /img/gallery-img/girl-vegetable-mob-1x-min.jpg 1x, 
+            /img/gallery-img/girl-vegetable-mob-2x-min.jpg 2x"
             media="(min-width: 320px)"
           />
           <img
-            src="/img/gallery-img/bag-on-a-chair-basic.jpg"
-            alt="Bag on a chair"
+            src="../img/gallery-img/girl-vegetables-basic-min.jpg"
+            alt="Girl with vegetables on a bag"
             class="img-small"
           />
           </picture>
         </div>
-
       </li>
+
     </ul>
 
     </div>

@@ -13,16 +13,17 @@
 img {
     max-width: 338px;
 }
-.div-text {
+.span-text {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 24px;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 .section-title {
+    font-family: "Comfortaa", sans-serif;
     font-weight: 700;
     font-size: 48px;
     line-height: 1.2;
@@ -76,7 +77,9 @@ img {
 .hidden-des {
   display: none;
 }
-
+.hidden-des-chair {
+  display: none;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1439px){
 
@@ -93,7 +96,6 @@ img {
 .ul-gallery-small {
     flex-direction: row;
     gap: 24px;
-    flex-wrap: wrap;  
 }
 
 
@@ -149,6 +151,9 @@ img {
   }
 
   .no-hidden-mob {
+    display: block;
+  }
+  .hidden-des-chair {
     display: block;
   }
 }
