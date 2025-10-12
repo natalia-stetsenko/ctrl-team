@@ -1,14 +1,3 @@
-:root {
-  --body-background: #ebf8ed;
-  --header-footer-background: #75d281;
-  --btn-background-darkest: #030a06;
-  --text-color-primary: #030a06;
-  --text-color-secondary: #ffffff;
-  --text-color-input: rgba(3, 10, 6, 0.6);
-
-  --font-family: 'Fira Sans', sans-serif;
-  --second-family: 'Comfortaa', sans-serif;
-}
 
 img {
     max-width: 338px;
