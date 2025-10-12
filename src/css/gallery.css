@@ -92,6 +92,7 @@ img {
   flex-direction: row-reverse;
   position: absolute;
   top: 54%;
+  max-height: 700px;
 }
 .position{
   top: 50%;
