@@ -6,6 +6,16 @@
   --text-color-secondary: #ffffff;
   --text-color-input: rgba(3, 10, 6, 0.6);
 
+  --color-error-red: #d64040;
+  --color-scheme-1-background: #dfece1;
+  --color-neutral-darkest: #030a06;
+  --color-scheme-1-border: rgba(3, 10, 6, 0.15);
+  --color-scheme-1-text: #030a06;
+  --color-white: #fff;
+  --color-neutral-dark: #4e5350;
+  --opacity-neutral-darkest-5: rgba(3, 10, 6, 0.05);
+  --opacity-neutral-darkest-40: rgba(3, 10, 6, 0.4);
+
   --font-family: 'Fira Sans', sans-serif;
   --second-family: 'Comfortaa', sans-serif;
 }
