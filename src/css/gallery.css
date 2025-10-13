@@ -2,7 +2,7 @@
 img {
     max-width: 338px;
 }
-.span-text {
+.div-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,7 +118,7 @@ img {
     flex-direction: column;
   }
 
-  .span-text {
+  .div-text {
     gap: 16px;
   }
 
