@@ -1,6 +1,8 @@
-.container {
+@media screen and (max-width: 767px) {
+    .feedback-section {
     padding: 32px 0;
     margin: 0 auto;
+    }
 }
 
 .feedback-section-header {
@@ -39,7 +41,6 @@
 
 .feedback-item {
     padding: 0;
-    margin: 0 auto;
     width: 288px;
 }
 
@@ -68,12 +69,10 @@
         margin-bottom: 32px;
     }
 
-    .container {
-        padding: 64px 32px;
-    }
+
 
     .feedback-item {
-        max-width: calc(50% - 24px);
+        flex-basis: calc(50% - 12px);
     }
 
     .feedback-list {
@@ -101,7 +100,7 @@
     }
 
     .feedback-item {
-        width: 310px;
+        width: 288px;
     }
 
     .feedback-list {
