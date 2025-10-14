@@ -1,0 +1,131 @@
+:root {
+  --about-radius: 12px;
+  --about-overlay: rgba(16, 15, 15, 0.55);
+  --about-text-max: 600px;
+}
+
+.about {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  padding: 0;
+  margin-top: 0;
+  background: transparent;
+}
+
+.about-textcont {
+  position: relative;
+  width: 100%;
+  min-height: 240px;
+  border-radius: 0;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../img/about-mobile.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(8, 8, 8, 0.06);
+}
+
+.about-textcont .about-overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--about-overlay);
+  z-index: 0;
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0 0 24px;
+  font-size: 16px;
+  text-transform: capitalize;
+  letter-spacing: 0.6px;
+  opacity: 0.95;
+  font-weight: 500;
+  width: 288px;
+}
+
+.about-subtitle {
+  font-family: 'Comfortaa', sans-serif;
+  margin: 0 0 24px;
+  font-size: 36px;
+  line-height: 1.05;
+  font-weight: 500;
+}
+
+.about-text {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.95;
+  line-height: 1.45;
+}
+
+@media screen and (min-width: 768px) {
+  .about-textcont {
+    min-height: 340px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../img/about-tablet.jpg');
+  }
+
+  .about-content {
+    max-width: 80%;
+  }
+
+  .about-subtitle {
+    font-size: 36px;
+  }
+  .about-text {
+    font-size: 18px;
+  }
+  .about-title {
+    font-size: 16px;
+    width: 573px;
+  }
+}
+
+/* Desktop (>=1158px) */
+@media screen and (min-width: 1158px) {
+  .about-textcont {
+    min-height: 420px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../img/about-desktop.jpg');
+    background-position: center;
+    justify-content: center;
+  }
+
+  .about-content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: var(--about-text-max);
+  }
+
+  .about-subtitle {
+    font-size: 56px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+  }
+  .about-text {
+    font-size: 18px;
+    width: 573px;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+  }
+  .about-title {
+    font-size: 16px;
+  }
+}
