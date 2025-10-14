@@ -1,0 +1,161 @@
+
+img {
+    max-width: 338px;
+}
+.div-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.section-title {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--text-color-primary);
+}
+
+.h-three {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--text-color-primary);
+}
+
+.list-gallery {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ul-gallery-small {
+    display: flex;
+    flex-direction:column;
+    gap: 24px;
+}
+
+.ul-gallery {
+    display: flex;
+    flex-direction:row;
+    gap: 24px;
+}
+
+.li-gallery {
+  display: flex;
+  gap: 12px;
+}
+
+.img-large img {
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 32px;
+}
+.img-small {
+  border-radius: 32px;
+}
+
+
+.hidden-des {
+  display: none;
+}
+.hidden-des-chair {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px){
+
+  .section-title {
+    font-size: 36px;
+}
+
+.list-gallery {
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 400px;
+}
+
+.ul-gallery-small {
+    flex-direction: row;
+    gap: 24px;
+}
+
+
+.ul-gallery {
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 54%;
+  max-height: 700px;
+}
+.position{
+  top: 50%;
+  transform: translateY(105.9%);
+}
+
+.hidden-des {
+  display: none;
+}
+
+.hidden-tab {
+  display: none;
+}
+
+.no-hidden-des {
+  display: block;
+}
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+  .div-text {
+    flex-direction: column;
+  }
+
+  .div-text {
+    gap: 16px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .gallery-section {
+    padding: 32px 0;
+  }
+
+  .list-gallery {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ul-gallery {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hidden-nead {
+    display: none;
+  }
+
+  .hidden-mob {
+    display: none;
+  }
+
+  .hidden-mob {
+    display: none;
+  }
+
+  .no-hidden-mob {
+    display: block;
+  }
+  .hidden-des-chair {
+    display: block;
+  }
+}
