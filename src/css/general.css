@@ -17,6 +17,7 @@
   --opacity-neutral-darkest-40: rgba(3, 10, 6, 0.4);
   --color-scheme-1-text: var(--color-neutral-darkest);
   --color-scheme-1-border: var(--opacity-neutral-darkest-15);
+  --link-active: #3ac04c;
 
   --font-family: 'Fira Sans', sans-serif;
   --second-family: 'Comfortaa', sans-serif;
