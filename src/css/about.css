@@ -21,10 +21,11 @@
   min-height: 240px;
   border-radius: 0;
   overflow: hidden;
-  background: url("../img/about-mobile.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../img/about-mobile.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   box-shadow: 0 6px 18px rgba(8, 8, 8, 0.06);
 }
 
@@ -40,7 +41,6 @@
   z-index: 1;
   color: #ffffff;
   text-align: center;
-  padding: 20px 16px;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -53,6 +53,7 @@
   letter-spacing: 0.6px;
   opacity: 0.95;
   font-weight: 500;
+  width: 288px;
 }
 
 .about-subtitle {
@@ -71,52 +72,60 @@
   line-height: 1.45;
 }
 
-/* Tablet (768px) */
 @media screen and (min-width: 768px) {
   .about-textcont {
     min-height: 340px;
-    background-image: url("../img/about-tablet.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../img/about-tablet.jpg');
   }
 
   .about-content {
-    padding: 32px;
     max-width: 80%;
   }
 
-  .about-subtitle { font-size: 36px; }
-  .about-text     { font-size: 18px; }
-  .about-title    { font-size: 16px; }
+  .about-subtitle {
+    font-size: 36px;
+  }
+  .about-text {
+    font-size: 18px;
+  }
+  .about-title {
+    font-size: 16px;
+    width: 573px;
+  }
 }
 
 /* Desktop (>=1158px) */
 @media screen and (min-width: 1158px) {
   .about-textcont {
     min-height: 420px;
-    background-image: url("../img/about-desktop.jpg");
-    background-position: center;  
-    justify-content: center;      
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../img/about-desktop.jpg');
+    background-position: center;
+    justify-content: center;
   }
 
   .about-content {
-    text-align: center;           
-    padding: 48px;
+    text-align: center;
     margin: 0 auto;
     max-width: var(--about-text-max);
   }
 
-  .about-subtitle { 
-    font-size: 56px; 
-    max-width: 400px; 
+  .about-subtitle {
+    font-size: 56px;
+    max-width: 400px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     word-wrap: break-word;
   }
-  .about-text     {
-     font-size: 18px; 
-      max-width: 550px; 
+  .about-text {
+    font-size: 18px;
+    width: 573px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     word-wrap: break-word;
   }
-  .about-title    { font-size: 16px; }
+  .about-title {
+    font-size: 16px;
+  }
 }
