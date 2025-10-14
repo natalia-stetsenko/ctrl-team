@@ -1,0 +1,127 @@
+.title-assortment {
+    font-family: var(--second-family);
+    color: var(--text-color-primary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.section-assortment {
+    padding-top: 32px; 
+    padding-bottom: 32px;
+}
+
+.assortment-container {
+    width: 320px;
+}
+
+.list-item-assortment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.item-assortment img {
+    border-radius: 32px;
+    margin-bottom: 16px;
+}
+
+.item-assortment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 288px;
+    height: 530px;
+    min-width: 200px;
+}
+
+.name-bag {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.descr-bag {
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.price {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.button-buy {
+    border: 1px solid var(--btn-background-darkest);
+    border-radius: 6px;
+    padding: 8px 20px;
+    height: 40px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: transparent;
+}
+
+.button-buy:hover,
+.button-buy:focus {
+    opacity: 0.5;
+}
+
+.button-buy:active {
+    opacity: 0.6; 
+}
+
+@media (min-width: 768px) {
+    .section-assortment {
+        padding-top: 64px; 
+        padding-bottom: 64px;
+    }
+    .assortment-container {
+        width: 768px;
+    }
+
+    .item-assortment {
+        width: 340px;
+        height: 593px;
+        min-width: 300px;
+    }
+
+    .list-item-assortment {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+    
+}
+
+@media (min-width: 1440px) {
+    .assortment-container {
+        width: 1440px;
+    }
+
+    .item-assortment {
+        width: 310px;
+        height: 557px;
+    }
+
+    .title-assortment {
+        font-size: 48px;
+    }
+    .list-item-assortment {
+        row-gap: 64px;
+    }
+
+}
