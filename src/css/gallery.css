@@ -1,32 +1,31 @@
-
 img {
-    max-width: 338px;
+  max-width: 338px;
 }
 .div-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 24px;
-    margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
 }
 
 .section-title {
-    font-family: "Comfortaa", sans-serif;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
-    text-align: center;
-    color: var(--text-color-primary);
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--text-color-primary);
 }
 
 .h-three {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: center;
-    color: var(--text-color-primary);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--text-color-primary);
 }
 
 .list-gallery {
@@ -37,15 +36,15 @@ img {
 }
 
 .ul-gallery-small {
-    display: flex;
-    flex-direction:column;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .ul-gallery {
-    display: flex;
-    flex-direction:row;
-    gap: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
 
 .li-gallery {
@@ -62,7 +61,6 @@ img {
   border-radius: 32px;
 }
 
-
 .hidden-des {
   display: none;
 }
@@ -70,50 +68,47 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px){
-
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .section-title {
     font-size: 36px;
-}
+  }
 
-.list-gallery {
-  flex-direction: column;
-  position: relative;
-  margin-bottom: 400px;
-}
+  .list-gallery {
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 400px;
+  }
 
-.ul-gallery-small {
+  .ul-gallery-small {
     flex-direction: row;
     gap: 24px;
+  }
+
+  .ul-gallery {
+    flex-direction: row-reverse;
+    position: absolute;
+    top: 54%;
+    max-height: 700px;
+  }
+  .position {
+    top: 50%;
+    transform: translateY(105.9%);
+  }
+
+  .hidden-des {
+    display: none;
+  }
+
+  .hidden-tab {
+    display: none;
+  }
+
+  .no-hidden-des {
+    display: block;
+  }
 }
 
-
-.ul-gallery {
-  flex-direction: row-reverse;
-  position: absolute;
-  top: 54%;
-  max-height: 700px;
-}
-.position{
-  top: 50%;
-  transform: translateY(105.9%);
-}
-
-.hidden-des {
-  display: none;
-}
-
-.hidden-tab {
-  display: none;
-}
-
-.no-hidden-des {
-  display: block;
-}
-}
-
-
-@media screen and (min-width: 320px) and (max-width: 767px){
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .div-text {
     flex-direction: column;
   }
@@ -121,15 +116,16 @@ img {
   .div-text {
     gap: 16px;
   }
-.div-text {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-bottom: 32px;
+  .div-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
 }
 
 .section-title {
-  font-family: "Comfortaa", sans-serif;
+  font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 1.2;
@@ -139,7 +135,7 @@ img {
 }
 
 .h-three {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
@@ -175,12 +171,11 @@ img {
 }
 
 .shadow {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
   min-height: 100%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
-
   .section-title {
     font-size: 36px;
   }
@@ -217,27 +212,24 @@ img {
   .hidden-des-chair {
     display: block;
   }
-=======
+
   .ul-gallery {
     max-width: 704px;
     flex-wrap: wrap;
   }
 
-
   .li-gallery-small {
     flex-direction: row;
   }
-  
+
   .li-gallery-big {
     display: flex;
     flex-direction: row-reverse;
   }
-
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px){
-
-    .section-title {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .section-title {
     font-size: 36px;
   }
 
@@ -249,5 +241,4 @@ img {
   .li-gallery-big {
     flex-direction: column;
   }
-  
 }
