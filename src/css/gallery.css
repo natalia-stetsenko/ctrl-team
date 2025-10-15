@@ -71,7 +71,7 @@
   .li-gallery-small {
     flex-direction: row;
   }
-
+  
   .li-gallery-big {
     display: flex;
     flex-direction: row-reverse;
