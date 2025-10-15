@@ -1,172 +1,156 @@
 .contact-section {
   font-family: var(--second-family);
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+}
+
+.contact-wrapper {
+  display: flex;
   gap: 24px;
-  background: #dfece1;
+  align-items: center;
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
+  margin: 0 !important;
   width: 100%;
   max-width: 644px;
 }
 
+.contact-form h3 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  color: var(--color-scheme-1-text);
+  margin-bottom: 24px;
+}
+
 .contact-form p {
   font-family: var(--font-family);
-  font-weight: 400;
   font-size: 18px;
-  line-height: 160%;
-  color: #030a06;
+  line-height: 1.6;
+  color: var(--color-scheme-1-text);
   margin-bottom: 32px;
 }
 
-.contact-form h3 {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 120%;
-  color: #030a06;
-  margin-bottom: 24px;
-}
-
-.form-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 24px;
-  width: 100%;
-}
-
-.form-wrapper label,
-.form-user-comment label {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 14px;
-  margin-bottom: 8px;
-  color: #030a06;
-}
-
+.form-wrapper,
 .form-user-comment {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 24px;
 }
 
-.form-name-input {
+.form-label {
   font-family: var(--font-family);
-  font-size: 16px;
-  border: none;
-  border-radius: 0;
-  padding: 8px 0;
-  height: 42px;
-  background: transparent;
-  transition: border-color 0.3s ease;
-  width: 100%;
-  box-sizing: border-box;
+  font-size: 14px;
+  color: var(--color-scheme-1-text);
+  margin-bottom: 8px;
+  display: block;
 }
 
-.form-name-input::placeholder {
-  color: rgba(3, 10, 6, 0.3);
-  opacity: 1;
-}
-
-.form-name-input:focus {
-  border-bottom-color: #d64040;
-  outline: none;
-}
-
-.form-name-input:focus::placeholder {
-  color: #d64040;
-}
-
-.form-input-email {
-  font-family: var(--font-family);
-  font-size: 16px;
-  border: 1px solid rgba(3, 10, 6, 0.15);
-  border-radius: 6px;
-  padding: 8px 12px;
-  height: 42px;
-  background: rgba(3, 10, 6, 0.05);
-  transition: border-color 0.3s ease;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.form-input-email::placeholder {
-  color: rgba(3, 10, 6, 0.4);
-}
-
-.form-input-email:focus {
-  border-color: #d64040;
-  outline: none;
-}
-
+.form-name-input,
+.form-input-email,
 .form-input-user-comment {
   font-family: var(--font-family);
   font-size: 16px;
-  resize: none;
-  background: rgba(3, 10, 6, 0.05);
-  border: 1px solid rgba(3, 10, 6, 0.15);
+  border: 1px solid var(--color-scheme-1-border);
   border-radius: 6px;
-  padding: 12px;
-  height: 180px;
-  transition: border-color 0.3s ease;
+  padding: 8px 12px;
+  background: var(--opacity-neutral-darkest-5);
   width: 100%;
   box-sizing: border-box;
+  transition: border-color 0.3s;
 }
 
+.form-name-input,
+.form-input-email {
+  height: 42px;
+}
+
+.form-input-user-comment {
+  height: 180px;
+  resize: none;
+  padding: 12px;
+}
+
+.form-name-input::placeholder,
+.form-input-email::placeholder,
 .form-input-user-comment::placeholder {
-  color: rgba(3, 10, 6, 0.4);
+  color: var(--opacity-neutral-darkest-40);
 }
 
+.form-name-input:focus::placeholder,
+.form-input-email:focus::placeholder,
+.form-input-user-comment:focus::placeholder {
+  color: var(--color-neutral-darkest);
+}
+
+.form-name-input:focus,
+.form-input-email:focus,
 .form-input-user-comment:focus {
-  border-color: #d64040;
   outline: none;
 }
 
-.submit-btn {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  color: #fff;
-  background-color: #030a06;
+.form-input-email:invalid:not(:focus):not(:placeholder-shown),
+.form-name-input:invalid:not(:focus):not(:placeholder-shown),
+.form-input-user-comment:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: var(--color-error-red);
+  color: var(--color-error-red);
+}
+
+.form-input-email:invalid:not(:focus):not(:placeholder-shown)::placeholder {
+  color: var(--color-error-red);
+}
+
+.error-text {
+  display: none;
   font-family: var(--font-family);
-  border: 1px solid #4e5350;
+  font-size: 12px;
+  color: var(--color-error-red);
+  margin-top: 4px;
+}
+
+.form-input-email:invalid:not(:focus):not(:placeholder-shown) ~ .error-text {
+  display: block;
+}
+
+.submit-btn {
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-white);
+  background: var(--color-neutral-darkest);
+  border: 1px solid var(--color-neutral-dark);
   border-radius: 6px;
   padding: 12px 24px;
   width: 198px;
   height: 50px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s, transform 0.2s;
 }
 
 .submit-btn:hover {
   opacity: 0.8;
 }
 
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
 .contact-image {
   width: 644px;
   height: 767px;
   border-radius: 40px;
-  background-image: url('/img/support-img/support_desktop.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  flex-shrink: 0;
+  background: url('/img/support-img/support_desktop.jpg') center/cover no-repeat;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .contact-section {
+@media (min-width: 768px) and (max-width: 1439px) {
+  .contact-wrapper {
     flex-direction: column;
     align-items: center;
-    padding: 64px 32px;
   }
 
   .contact-form {
     max-width: 704px;
+    margin-bottom: 40px;
   }
 
   .contact-form h3 {
@@ -185,50 +169,29 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .contact-section {
+@media (max-width: 767px) {
+  .contact-wrapper {
     flex-direction: column;
-    align-items: stretch;
-    padding: 32px 16px;
     gap: 32px;
   }
 
-  .contact-form {
-    width: 100%;
-    max-width: 100%;
-  }
-
   .contact-form h3 {
-    font-size: 32px;
-    line-height: 120%;
+    font-size: 36px;
   }
 
   .contact-form p {
-    font-size: 16px;
-  }
-
-  .form-wrapper,
-  .form-user-comment {
-    width: 100%;
-  }
-
-  .form-name-input,
-  .form-input-email,
-  .form-input-user-comment {
-    width: 100%;
-    font-size: 16px;
+    font-size: 18px;
+    margin-bottom: 24px;
   }
 
   .submit-btn {
     width: 100%;
-    max-width: 100%;
   }
 
   .contact-image {
-    width: 100%;
-    height: 0;
-    padding-bottom: 148.6%;
+    border-radius: 40px;
+    width: 288px;
+    height: 428px;
     background-image: url('/img/support-img/support_mob.jpg');
-    border-radius: 90px;
   }
 }

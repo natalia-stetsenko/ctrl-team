@@ -32,11 +32,9 @@
     gap: 48px;
 }
 
-.advantages-itempic {
+.advantages-itempic img {
     border-radius: 32px;
-    overflow: hidden;
-    display: block;
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 8px;
 }
 
