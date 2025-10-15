@@ -180,23 +180,23 @@ img {
     font-size: 36px;
   }
 
-  /* .list-gallery {
+  .list-gallery {
     display: none;
-  } */
+  }
 
   .gallery-section {
     padding: 32px 0;
   }
 
   .list-gallery {
-    flex-direction: column;
-    gap: 16px;
+    /* flex-direction: column;
+    gap: 16px; */
   }
 
   .ul-gallery {
     flex-direction: column;
     gap: 16px;
-    display: none;
+    /* display: none; */
   }
 
   .hidden-nead {
@@ -221,6 +221,11 @@ img {
   .ul-gallery {
     max-width: 704px;
     flex-wrap: wrap;
+    top: 54%;
+    position: static;
+    flex-direction: column;
+    top: auto;
+    max-height: none;
   }
 
   .li-gallery-small {
@@ -230,6 +235,7 @@ img {
   .li-gallery-big {
     display: flex;
     flex-direction: row-reverse;
+    display: none;
   }
 }
 
